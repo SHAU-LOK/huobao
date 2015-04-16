@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+            <corners android:radius="20dp" />
+
+            <padding android:bottom="3dp" android:left="10dp" android:right="10dp" android:top="3dp" />
+
+            <stroke android:width="1dp" android:color="@color/text_color_blue" />
+
+            <solid android:color="@color/text_color_blue" />
+        </shape></item>
+    <item android:state_pressed="false"><shape android:shape="rectangle">
+            <corners android:radius="20dp" />
+
+            <padding android:bottom="3dp" android:left="10dp" android:right="10dp" android:top="3dp" />
+
+            <stroke android:width="1dp" android:color="@color/text_color_blue" />
+
+            <solid android:color="@color/transparent" />
+        </shape></item>
+
+</selector><!-- From: file:/D:/android/android-project/android-studio-project/huobao/app/src/main/res/drawable/text_with_border_selector.xml -->

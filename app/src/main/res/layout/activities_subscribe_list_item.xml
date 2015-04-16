@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="The Color Run彩跑活动 2015年首站登陆金沙半岛"
+                android:textColor="@color/text_color_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:maxLines="4"
+                android:text="2015年1月10日， The Color Run彩跑活动将在广州白云区金沙半岛打响新年头炮。是时候让自己放肆地疯一次，沉浸在这片梦幻般的彩色海洋里；是时候让自己不清不白一次，做个花心好色之徒！关注金沙半岛官方微信，输入【报名】即可免费报名，还送运动装备！当天到访更有趣味游戏、慈善义卖、游珠江等精彩活动，还能赢取iphone6、ipad mini、豪华家电礼包等大奖！"
+                android:textColor="@color/text_color_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="6dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/u238" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+</LinearLayout>

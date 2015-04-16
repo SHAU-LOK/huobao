@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/id_mine_activities_item_icon"
+        android:src="@drawable/u26" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="欢乐谷星光圣诞嘉年华"
+            android:id="@+id/id_mine_activities_item_title"
+            android:textColor="@color/text_color_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="深圳大运中心"
+            android:id="@+id/id_mine_activities_item_location"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="进行中"
+            android:id="@+id/id_mine_activities_item_progress"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/u38"
+        android:gravity="right|center_vertical"
+        android:layout_gravity="right|center"
+        android:textColor="@color/text_color_black"
+        android:text="查看"
+        android:textSize="15sp" />
+
+</LinearLayout><!-- From: file:/D:/android/android-project/android-studio-project/huobao/app/src/main/res/layout/mine_activities_list_item.xml -->

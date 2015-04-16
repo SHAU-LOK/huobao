@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_background" >
+
+    <RelativeLayout
+        android:id="@+id/mine_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/text_color_blue" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:text="我"
+            android:textColor="@color/text_color_while"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/mine_bar" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_selector" >
+
+                    <ImageView
+                        android:id="@+id/id_mine_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_centerInParent="true"
+					    android:layout_alignParentLeft="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/u295" />
+
+                    <TextView
+                        android:id="@+id/id_mine_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/id_mine_icon"
+                        android:text="他们叫我凯爷"
+                        android:textColor="@color/text_color_red"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/id_mine_user_describe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/id_mine_user_name"
+                        android:layout_below="@id/id_mine_user_name"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="总有人视图给你答案，但没人能..."
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/id_mine_user_sex"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignTop="@id/id_mine_user_name"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/id_mine_user_name"
+                        android:contentDescription="sex"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_male"
+                        android:textColor="@color/text_color_while" />
+
+                    <TextView
+                        android:id="@+id/tv_mine_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical"
+                        android:text="编辑"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <!-- 分界线 -->
+
+                <include layout="@layout/list_divider_with_border" />
+
+                <!-- 分界线 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_mine_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/mine_activities"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/list_item_selector"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="活动"
+                                android:textColor="@color/text_color_gray"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/id_mine_activities_number"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="24"
+                                android:textColor="@color/text_color_gray"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/line" />
+
+                        <LinearLayout
+                            android:id="@+id/mine_invite"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/list_item_selector"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="邀请"
+                                android:textColor="@color/text_color_gray"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/id_mine_invite_number"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="42"
+                                android:textColor="@color/text_color_gray"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/line" />
+
+                        <LinearLayout
+                            android:id="@+id/mine_dongtai"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/list_item_selector"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="动态"
+                                android:textColor="@color/text_color_gray"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/id_mine_trends_number"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:text="7"
+                                android:textColor="@color/text_color_gray"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- 分界线 -->
+
+                <include layout="@layout/list_divider_with_border" />
+
+                <!-- 分界线 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_selector"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/mine_list_item_logo"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/img_background_shape"
+                            android:contentDescription="活动券icon"
+                            android:src="@drawable/u114" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="活动券"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/id_mine_activities_tickers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="2张券等待付款"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 分界线 -->
+
+                <include layout="@layout/list_divider_with_border" />
+
+                <!-- 分界线 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_selector"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/img_background_shape1"
+                            android:contentDescription="我看过谁icon"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/u55" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="我看过谁"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/id_mine_watching_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text=""
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/img_background_shape1"
+                            android:contentDescription="谁看过我icon"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/u55" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="谁看过我"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/id_mine_watched_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text=""
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 分界线 -->
+
+                <include layout="@layout/list_divider_with_border" />
+
+                <!-- 分界线 -->
+
+                <LinearLayout
+                    android:id="@+id/id_mine_linear_activities"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_selector"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/img_background_shape2"
+                            android:contentDescription="宝豆充值icon"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/u102" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="宝豆充值"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/id_mine_baodou_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="50 宝豆"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- tail of 宝豆充值 -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/img_background_shape2"
+                            android:contentDescription="积分icon"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/u118" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="积分"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/id_mine_jifen_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="450 积分"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- tail of 积分 -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line" />
+
+                    <!-- head of 商城 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/img_background_shape2"
+                            android:contentDescription="商城icon"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/u116" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="商城"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/id_mine_shangcheng_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text=""
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- tail of 商城 -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line" />
+
+                    <!-- head of 会员中心 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/img_background_shape2"
+                            android:contentDescription="会员中心icon"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/u98" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="会员中心"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/id_mine_huiyuan_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="VIP"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- tail of 会员中心 -->
+
+                </LinearLayout>
+
+                <!-- 分界线 -->
+
+                <include layout="@layout/list_divider_with_border" />
+
+                <!-- 分界线 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_selector"
+                    android:orientation="vertical" >
+
+                    <!-- head of 申请成为主办方 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/img_background_shape3"
+                            android:contentDescription="主办方申请icon"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/u296" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="申请成为主办方"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/id_mine_zhuanbanfang_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text=""
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- tail of 主办方 -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line" />
+
+                    <!-- head of 意见反馈 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/img_background_shape3"
+                            android:contentDescription="意见反馈icon"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/u190" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="意见反馈"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/id_mine_feedback_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text=""
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- tail of 意见反馈 -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line" />
+
+                    <!-- head of 设置 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/img_background_shape3"
+                            android:contentDescription="设置icon"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/u84" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="设置"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/id_mine_checkUpdate_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="检测到有最新版本"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- tail of 设置 -->
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line" />
+                </LinearLayout>
+
+                <!-- 分界线 -->
+
+                <include layout="@layout/list_divider_large" />
+
+                <!-- 分界线 -->
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/D:/android/android-project/android-studio-project/huobao/app/src/main/res/layout/mine_main_fragment.xml -->

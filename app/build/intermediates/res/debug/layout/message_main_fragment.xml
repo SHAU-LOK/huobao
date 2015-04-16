@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mine_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_blue"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/person_activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消息"
+            android:textColor="@color/text_color_while"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/id_message_main_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/person_activities"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/return_selector"
+            android:text="通信录"
+            android:textColor="@color/text_color_while"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/id_message_main_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+         >
+    </ListView>
+
+</LinearLayout><!-- From: file:/D:/android/android-project/android-studio-project/huobao/app/src/main/res/layout/message_main_fragment.xml -->

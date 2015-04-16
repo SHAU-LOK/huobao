@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true"><shape android:shape="rectangle">
+
+            <!-- 中间半径 -->
+            <corners android:bottomLeftRadius="0px" android:bottomRightRadius="0px" android:topLeftRadius="0px" android:topRightRadius="0px" />
+
+            <stroke android:width="2px" android:color="@color/text_color_while" />
+
+            <solid android:color="@color/text_color_while" />
+        </shape></item>
+    <item android:state_selected="false"><shape android:shape="rectangle">
+
+            <!-- 中间半径 -->
+            <corners android:bottomLeftRadius="0px" android:bottomRightRadius="0px" android:topLeftRadius="0px" android:topRightRadius="0px" />
+
+            <stroke android:width="2px" android:color="@color/text_color_while" />
+
+            <solid android:color="@color/text_color_blue" />
+        </shape></item>
+
+</selector><!-- From: file:/D:/android/android-project/android-studio-project/huobao/app/src/main/res/drawable/discover_top_center_round_shape_selector.xml -->

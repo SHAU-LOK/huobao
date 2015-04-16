@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/transparent" />
+
+<!-- From: file:/D:/android/android-project/android-studio-project/huobao/app/src/main/res/layout/list_divider_large.xml -->

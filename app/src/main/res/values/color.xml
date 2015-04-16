@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_color_while">#ffFFFFFF</color>
+    <color name="text_color_blue">#ff0099FF</color>
+    <color name="text_color_red">#ffE74C3C</color>
+    <color name="text_color_gray">#ff666666</color>
+    <color name="text_color_black">#ff000000</color>
+    <color name="border_color_gray">#ffCCCCCC</color>
+    <color name="list_background">#ffeaeaea</color>
+    <color name="white_pressed">#ffd5d5d5</color>
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+	<color name="blue">#ff4485F5</color>
+	<color name="parent">#ffebebeb</color>
+	<color name="line">#ffd9d9d9</color>
+	<color name="half_transparent_blue">#e00099FF</color>
+</resources>

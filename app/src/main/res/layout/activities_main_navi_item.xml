@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text_color_while"
+    android:orientation="horizontal" >
+
+    <!-- 热门 -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_selector"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:src="@drawable/ic_hot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="6dp"
+            android:text="热门"
+            android:textColor="@color/text_color_gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- 精品 -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_selector"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:src="@drawable/ic_jingpin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="6dp"
+            android:text="精品"
+            android:textColor="@color/text_color_gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- 周末 -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_selector"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:src="@drawable/ic_weekend" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="6dp"
+            android:text="周末"
+            android:textColor="@color/text_color_gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- 附近 -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/list_item_selector"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:src="@drawable/ic_fujin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="6dp"
+            android:text="附近"
+            android:textColor="@color/text_color_gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

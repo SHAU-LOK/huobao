@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- 顶部bar -->
+        <RelativeLayout
+            android:id="@+id/discover_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_color_blue"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_discover_following"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/discover_top_left_round_shape_selector"
+                    android:gravity="center"
+                    android:text="关注"
+                    android:textColor="@drawable/textcolor_selector"
+                    android:textSize="16sp"
+                    android:translationX="2px" />
+
+                <TextView
+                    android:id="@+id/tv_discover_group"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/discover_top_center_round_shape_selector"
+                    android:gravity="center"
+                    android:text="群组"
+                    android:textColor="@drawable/textcolor_selector"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_discover_recommend"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/discover_top_right_round_shape_selector"
+                    android:gravity="center"
+                    android:text="推荐"
+                    android:textColor="@drawable/textcolor_selector"
+                    android:textSize="16sp"
+                    android:translationX="-2px" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/id_discover_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/return_selector"
+                android:text="添加"
+                android:textColor="@color/text_color_while"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <!-- 放置fragment布局 -->
+
+        <FrameLayout
+            android:id="@+id/id_discover_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+            
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

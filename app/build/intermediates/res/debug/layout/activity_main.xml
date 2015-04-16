@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" 
+    android:orientation="vertical"
+    android:background="@color/list_background"
+    >
+
+    <FrameLayout
+        android:id="@+id/id_main_fragment_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+         >
+
+    </FrameLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        
+        layout="@layout/activity_main_bottom" />
+
+</LinearLayout><!-- From: file:/D:/android/android-project/android-studio-project/huobao/app/src/main/res/layout/activity_main.xml -->

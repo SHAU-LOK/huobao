@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/parent" >
+
+    <RelativeLayout
+        android:id="@+id/activities_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/text_color_blue"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/id_activities_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="广州[切换]"
+            android:textColor="@color/text_color_while"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="活动"
+            android:textColor="@color/text_color_while"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/id_activities_speak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/activities"
+            android:layout_marginRight="5dp"
+            android:text="爆料"
+            android:textColor="@color/text_color_while"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/activities_bar" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/viewpager_item" />
+
+            <!-- 导航大图标 -->
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/activities_main_navi_item" />
+
+            <!-- 分界线 -->
+
+            <include layout="@layout/list_divider_with_border" />
+
+            <!-- 附近活动推荐 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_selector"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="附近有"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="10个优秀主办方"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="正在举办活动"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <com.example.huobao.widget.NonScrollableListView
+                android:id="@+id/lv_activities"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </com.example.huobao.widget.NonScrollableListView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/D:/android/android-project/android-studio-project/huobao/app/src/main/res/layout/activities_main_fragment.xml -->

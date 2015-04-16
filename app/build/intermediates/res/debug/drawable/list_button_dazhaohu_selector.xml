@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/dazhaohu_pressed" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/dazhaohu"/>
+
+</selector><!-- From: file:/D:/android/android-project/android-studio-project/huobao/app/src/main/res/drawable/list_button_dazhaohu_selector.xml -->

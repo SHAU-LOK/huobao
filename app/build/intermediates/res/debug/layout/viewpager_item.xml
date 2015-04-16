@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/view_pager_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/viewGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_pager_content"
+        android:layout_marginTop="-40px"
+        android:gravity="right"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/D:/android/android-project/android-studio-project/huobao/app/src/main/res/layout/viewpager_item.xml -->

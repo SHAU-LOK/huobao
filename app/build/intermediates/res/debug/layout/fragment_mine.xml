@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/list_background"
+    >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="60dp" 
+        android:orientation="horizontal"
+        android:padding="10dp"
+		android:background="@drawable/list_item_selector"
+		
+        >
+        
+        <ImageView 
+            android:id="@+id/id_mine_icon"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/u295"
+            android:layout_marginRight="10dp"
+            />
+        <TextView 
+            android:id="@+id/id_mine_user_name"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:text="他们叫我智爷"
+             android:textColor="@color/text_color_red" 
+             android:textSize="12sp"
+             android:layout_toRightOf="@id/id_mine_icon"
+            android:paddingRight="10dp"
+            />
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="总有人视图给你答案，但没人能..."
+            android:textColor="@color/text_color_gray"
+            android:layout_toEndOf="@id/id_mine_user_name"
+            android:layout_toRightOf="@id/id_mine_icon"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/id_mine_user_name"
+            android:textSize="12sp"
+            />
+         
+        <TextView 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/id_mine_user_name"
+            android:text="♂"
+            android:background="@drawable/user_sex_shape"
+            android:gravity="center_horizontal"
+            />
+        
+        
+        
+    </RelativeLayout>
+    
+    
+
+</ScrollView>
+<!-- From: file:/D:/android/android-project/android-studio-project/huobao/app/src/main/res/layout/fragment_mine.xml -->

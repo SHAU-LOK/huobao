@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/list_divider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/text_color_while"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/border_color_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/id_invite_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:text="四海一家走起!"
+                android:textColor="@color/text_color_blue"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/border_color_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_while"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- 用户头像 -->
+
+                <ImageView
+                    android:id="@+id/id_invite_list_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/u295" />
+
+                <!-- 用户信息 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <!-- 用户名 -->
+
+                        <TextView
+                            android:id="@+id/id_invite_list_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="王思聪"
+                            android:textColor="@color/text_color_red"
+                            android:textSize="15sp" />
+
+                        <!-- 性别 icon -->
+
+                        <ImageView
+                            android:id="@+id/id_invite_list_sex"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center_vertical"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_male" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/id_invite_list_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="59km"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:background="@color/border_color_gray"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp" />
+
+                        <TextView
+                            android:id="@+id/id_invite_list_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="共同标签"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_margin="2dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_location" />
+
+                    <TextView
+                        android:id="@+id/id_invite_list_describe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="小桥人家试吃活动"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_margin="2dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_date" />
+
+                    <TextView
+                        android:id="@+id/id_invite_list_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="后天"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_margin="2dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_broadcast" />
+
+                    <TextView
+                        android:id="@+id/id_invite_list_notify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="我买单，谁不来都行"
+                        android:textColor="@color/text_color_gray"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/list_button_dazhaohu_selector" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/list_button_kanhuodong_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/border_color_gray" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_while"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/id_invite_list_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:text="已被24人邀请"
+            android:textColor="@color/text_color_gray"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/border_color_gray" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/android/android-project/android-studio-project/huobao/app/src/main/res/layout/invite_main_list_item.xml -->

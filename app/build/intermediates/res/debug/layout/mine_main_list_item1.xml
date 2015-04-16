@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/img_background_shape"
+        android:padding="3dp"
+        android:src="@drawable/u114" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="活动券"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|right"
+        android:text="2张券等待付款"
+        android:textColor="@color/border_color_gray"
+        android:textSize="18sp" />
+
+</LinearLayout><!-- From: file:/D:/android/android-project/android-studio-project/huobao/app/src/main/res/layout/mine_main_list_item1.xml -->
