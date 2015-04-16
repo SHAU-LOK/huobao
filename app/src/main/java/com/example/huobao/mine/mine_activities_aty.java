@@ -1,8 +1,5 @@
 package com.example.huobao.mine;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
@@ -23,12 +20,17 @@ import android.widget.Toast;
 
 import com.example.huobao_ui.R;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class mine_activities_aty extends Activity {
 
 	public static String TAG = mine_activities_aty.class.getName().toString();
 
 	private ListView mListView;
 	private TextView mreturn;
+
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -305,6 +307,13 @@ public class mine_activities_aty extends Activity {
 
 		mine_activities_aty.this.finish();
 
+        test();
 	}
+
+
+    private void test()
+    {
+
+    }
 
 }
